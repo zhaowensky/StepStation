@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WeatherCollectionItemCell" customModule="StepStation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="141" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="141" height="114"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONDAY 23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPG-DY-Ji4">
+                        <rect key="frame" x="24" y="7" width="92" height="22"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.40558112159999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="0b3-kJ-gYV"/>
+                            <constraint firstAttribute="height" constant="22" id="Za8-wG-8pd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_04" translatesAutoresizingMaskIntoConstraints="NO" id="6oQ-gN-666">
+                        <rect key="frame" x="55" y="37" width="30" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Y2S-b9-9MU"/>
+                            <constraint firstAttribute="height" constant="32" id="mmV-G8-zmV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4mph / 27°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP8-ox-vdn">
+                        <rect key="frame" x="32" y="73" width="76" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="c6H-6O-tzO"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="cuc-rj-sva"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="LPG-DY-Ji4" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="3aC-6i-TkS"/>
+                <constraint firstItem="6oQ-gN-666" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="4U9-I8-HjQ"/>
+                <constraint firstItem="EP8-ox-vdn" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="EdS-br-XDd"/>
+                <constraint firstItem="EP8-ox-vdn" firstAttribute="top" secondItem="6oQ-gN-666" secondAttribute="bottom" constant="4" id="gUa-jr-e0d"/>
+                <constraint firstItem="LPG-DY-Ji4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="7" id="qIB-Je-NAZ"/>
+                <constraint firstItem="6oQ-gN-666" firstAttribute="top" secondItem="LPG-DY-Ji4" secondAttribute="bottom" constant="8" id="skU-4p-ocu"/>
+            </constraints>
+            <size key="customSize" width="141" height="114"/>
+            <point key="canvasLocation" x="-123.5" y="49"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_04" width="54" height="49"/>
+    </resources>
+</document>
